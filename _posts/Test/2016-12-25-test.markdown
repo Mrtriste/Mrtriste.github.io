@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "test"
+date:   2016-12-25 09:56:37
+categories: Test
+comments: true
+---
+This is a test
+![图片](http://obdvl7z18.bkt.clouddn.com/img/20160626p1.jpg)
