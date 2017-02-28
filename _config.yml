@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: jinchengwone@gmail.com
 description: "Cool Blog"
 keyword: "Key"
-url: "https://mrtriste.github.io/"              # your host, for absolute URL
+url: "https://mrtriste.github.io"              # your host, for absolute URL
 baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
