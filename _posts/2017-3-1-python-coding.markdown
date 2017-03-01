@@ -43,8 +43,8 @@ UTF-8编码相对于Unicode的区别是，Unicode是定长的，而UTF-8是变�
 用Python写涉及编码的脚本时，可能经常会用到encode()和decode()函数，然后就会经常出现以下两种错误:
 
 ```py
-	UnicodeDecodeError: 'ascii' codec can't decode byte
-	UnicodeEncodeError: 'ascii' codec can't encode characters
+UnicodeDecodeError: 'ascii' codec can't decode byte
+UnicodeEncodeError: 'ascii' codec can't encode characters
 ```
 
 我们先不管上面两个错误，我们先把刚才说的三个编码代表理一下，在Python中，所有的字符串都继承自basestring,basestring又分成两类，str和unicode
