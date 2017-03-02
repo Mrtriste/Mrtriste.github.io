@@ -28,7 +28,7 @@ UTF-8编码相对于Unicode的区别是，Unicode是定长的，而UTF-8是变�
 那这样就产生一个问题，存储时都是放在一起的，如何判断哪几位是一个字符呢，简单来说就是通过一个UTF-8字符的前n位标1，第n+1位标0表示n位字节的字符。
 
 本文重点在理清关系，原理性的东西可以另行搜索。
-
+<br><br>
 
 
 
@@ -104,7 +104,7 @@ s6 = s.decode('utf-8').encode('ascii')
 4. 然后，s4,s5与s2,s3类似，目的是将UTF-8编码的s转化成gbk的字符串
 
 5. 最后，看s6,先将s以utf-8编码解码，再encode(),按刚才的流程讲应该没错啊，为啥还会报错呢？错误信息是```UnicodeEncodeError: 'ascii' codec can't encode characters ```,原因是ASCII字符集中没有中文，所以将中文encode()成ASCII时，ASCII接收不了，所以错误信息是ascii can't encode...
-
+<br><br>
 
 
 
@@ -120,7 +120,7 @@ s6 = s.decode('utf-8').encode('ascii')
 4. unicode可以看成一个最基本的编码，它可以转换为任何编码(只要不是目标编码中没有与源字符串对应的字符就好，比如ascii中就没有中文的字符，中文encode成ascii会报ascii can't encode...的错)
 
 5. 不要对str直接使用encode(比如先decode再encode就不算),不要对unicode使用decode(因为Unicode已经是最基本的编码)
-
+<br><br>
 
 
 #### 最后引用一段别人在涉及编码时的处理流程
