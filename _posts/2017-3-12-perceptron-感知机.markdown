@@ -33,12 +33,10 @@ L2:表示向量元素的平方和再开平方。（欧式距离）
 对n维的数据中的每一个n维向量x，n维权值向量w和偏置参数b，当w·x+b>=0，输出为1，当w·x+b<0，输出为0
 
 即
-$$
-sign(w·x+b)=\begin{cases}
+$$sign(w·x+b)=\begin{cases}
 1&\text{w·x+b>=0}\\
 -1&\text{w·x+b<0}
-\end{cases}
-$$
+\end{cases}$$
 
 感知机就是找到一种函数将训练集中的每个(x,y)进行分类，使y=sign(w·x+b)成立。
 
