@@ -14,9 +14,7 @@ tags:
 ## L0、L1、L2范数
 
 L-P范数：
-\\[
-L_p=\sqrt[p]{\sum_1^n{x_i^p}}\quad,x=(x_1,x_2,···,x_n)
-\\]
+$$L_p=\sqrt[p]{\sum_1^n{x_i^p}}\quad,x=(x_1,x_2,···,x_n)$$
 
 L0:表示度量向量中非零元素的个数。
 
