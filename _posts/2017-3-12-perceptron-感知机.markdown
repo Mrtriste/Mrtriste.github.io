@@ -15,21 +15,16 @@ tags:
 
 L-P范数：
 
-$$L_p=\sqrt[p]{\sum_1^n{x_i^p}}\quad,x=(x_1,x_2,···,x_n)$$
 
+$$
+L_p=\sqrt[p]{\sum_1^n{x_i^p}}\quad,x=(x_1,x_2,···,x_n)
+$$
 L0:表示度量向量中非零元素的个数。
 
 L1:表示向量x中非零元素的绝对值之和。（曼哈顿距离）
 
 L2:表示向量元素的平方和再开平方。（欧式距离）
 
-试图写一个latex公式1
-
-$x^2$
-
-试图写一个latex公式2
-
-$${x^2}$$
 
 ## 感知机
 
@@ -38,11 +33,17 @@ $${x^2}$$
 对n维的数据中的每一个n维向量x，n维权值向量w和偏置参数b，当w·x+b>=0，输出为1，当w·x+b<0，输出为0
 
 即
-$$sign(w·x+b)=\begin{cases}
-1&\text{w·x+b>=0}\\
--1&\text{w·x+b<0}
-\end{cases}$$
 
+
+$$
+sign(w·x+b)=\begin{cases}
+
+1&\text{w·x+b>=0}\
+
+-1&\text{w·x+b<0}
+
+\end{cases}
+$$
 感知机就是找到一种函数将训练集中的每个(x,y)进行分类，使y=sign(w·x+b)成立。
 
 具体点的解释就是在n维空间中（n为数据集的维数），有这些训练集分布在这个空间中，感知机就是找到一个超平面分割这些点，在这个超平面的“上侧”的标记全为1，“下侧”全为-1。
@@ -54,14 +55,20 @@ $$sign(w·x+b)=\begin{cases}
 损失函数：误分类点到当前超平面的总距离。
 
 对每个误分类点(xi,yi)到超平面的距离为
+
+
 $$
 -\frac{1}{\left\|w\right\|}y_i(w·x_i+b)\quad,\left\|w\right\|是w的L_2范数.
 $$
 M为误分类点，总距离为
+
+
 $$
 -\frac{1}{\left\|w\right\|}\sum_{x_i\in{M}}{y_i(w·x_i+b)}
 $$
 不考虑$$\frac{1}{\left\|w\right\|}$$，损失函数为
+
+
 $$
 L(w,b)=-\sum_{x_i\in{M}}{y_i(w·x+b)}
 $$
@@ -74,6 +81,8 @@ $$
 感知机学习算法是误分类驱动的。
 
 首先L(w,b)的梯度为
+
+
 $$
 \begin{align}
 &\nabla{_w}{L(w,b)}=-\sum_{x_i\in M}{y_ix_i}\\
@@ -81,6 +90,8 @@ $$
 \end{align}
 $$
 随机选取一个误分类点$$(x_i,y_i)$$，对w,b进行更新，
+
+
 $$
 \begin{align}
 &w\leftarrow w+\eta y_ix_i\\
@@ -100,6 +111,8 @@ $$
 (2).在训练集中选取数据$$(x_i,y_i)$$
 
 (3).如果$$y_i(w·x_i+b)<=0$$
+
+
 $$
 \begin{align}
 &w\leftarrow w+\eta y_ix_i\\
