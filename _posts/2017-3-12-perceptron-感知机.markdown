@@ -51,17 +51,17 @@ $$
 损失函数：误分类点到当前超平面的总距离。
 
 对每个误分类点(xi,yi)到超平面的距离为
-\\[
+$$
 -\frac{1}{\left\|w\right\|}y_i(w·x_i+b)\quad,\left\|w\right\|是w的L_2范数.
-\\]
+$$
 M为误分类点，总距离为
-\\[
+$$
 -\frac{1}{\left\|w\right\|}\sum_{x_i\in{M}}{y_i(w·x_i+b)}
-\\]
+$$
 不考虑$$\frac{1}{\left\|w\right\|}$$，损失函数为
-\\[
+$$
 L(w,b)=-\sum_{x_i\in{M}}{y_i(w·x+b)}
-\\]
+$$
 现在的目标就是根据损失函数学习w和b。
 
 
@@ -78,12 +78,12 @@ $$
 \end{align}
 $$
 随机选取一个误分类点$$(x_i,y_i)$$，对w,b进行更新，
-\\[
+$$
 \begin{align}
 &w\leftarrow w+\eta y_ix_i\\
 &b\leftarrow  b+\eta y_i
 \end{align}
-\\]
+$$
 式中$$\eta(0<\eta<=1)$$为步长，也就是学习率。
 
 为什么可以这样对w,b迭代就可以减小损失函数呢？可以这么理解，梯度就是沿着超空间中的一点值变化最快的方向，在二维平面中，就是直线的斜率。
@@ -97,12 +97,12 @@ $$
 (2).在训练集中选取数据$$(x_i,y_i)$$
 
 (3).如果$$y_i(w·x_i+b)<=0$$
-\\[
+$$
 \begin{align}
 &w\leftarrow w+\eta y_ix_i\\
 &b\leftarrow  b+\eta y_i
 \end{align}
-\\]
+$$
 (4).转至(2)，直至没有误分类点。
 
 
