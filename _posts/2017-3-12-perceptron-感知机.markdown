@@ -71,12 +71,12 @@ L(w,b)=-\sum_{x_i\in{M}}{y_i(w·x+b)}
 感知机学习算法是误分类驱动的。
 
 首先L(w,b)的梯度为
-\\[
+$$
 \begin{align}
 &\nabla{_w}{L(w,b)}=-\sum_{x_i\in M}{y_ix_i}\\
 &\nabla{_b}{L(w,b)}=-\sum_{x_i\in M}{y_i}
 \end{align}
-\\]
+$$
 随机选取一个误分类点$$(x_i,y_i)$$，对w,b进行更新，
 \\[
 \begin{align}
