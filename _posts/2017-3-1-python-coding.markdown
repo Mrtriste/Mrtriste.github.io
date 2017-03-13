@@ -99,7 +99,7 @@ s6 = s.decode('utf-8').encode('ascii')
 
 2. 然后看s2,对utf-8进行utf-8编码，为啥会报错呢？
 
-3. 先别急，看s3,为啥先解码再编码就对了呢？原因是在非ascii的字符串encode()时,会自动以ascii格式先解码成Unicode，再encode(),有ascii中没有中文，所以会报```UnicodeDecodeError: 'ascii' codec can't decode byte```的错
+3. 先别急，看s3,为啥先解码再编码就对了呢？原因是在非ascii的字符串encode()时,会自动以ascii格式先解码成Unicode，再encode(),又由于ascii中没有中文，所以会报```UnicodeDecodeError: 'ascii' codec can't decode byte```的错
 
 4. 然后，s4,s5与s2,s3类似，目的是将UTF-8编码的s转化成gbk的字符串
 
@@ -113,7 +113,7 @@ s6 = s.decode('utf-8').encode('ascii')
 
 1. 所有的字符串都属于str类或unicode类，unicode只包含Unicode编码的字符串，str包含其他所有编码的字符串，而且这两个类都继承自basestring
 
-2. encode()都是针对Unicode编码的字符串，如果对一个str(即非Unicode编码的字符串)直接encode()<br>时，系统会对这个字符串自动调用decode('ascii'),尝试将其转化为Unicode，如果不能以ascii格式转化成Unicode，则会报```UnicodeDecodeError: 'ascii' codec can't decode byte```的错<br>
+2. encode()都是针对Unicode编码的字符串，如果对一个str(即非Unicode编码的字符串)直接encode()时，系统会对这个字符串自动调用decode('ascii'),尝试将其转化为Unicode，如果不能以ascii格式转化成Unicode，则会报```UnicodeDecodeError: 'ascii' codec can't decode byte```的错<br>
 
 3. unicode是str改变编码格式的过渡类，可以把它看成一个垫脚石，如果对str执行encode(),不管是不是系统自动先decode(),还是显式执行，都要先转化为Unicode编码，再进行encode()
 
