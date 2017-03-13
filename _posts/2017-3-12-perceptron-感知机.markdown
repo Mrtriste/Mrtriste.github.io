@@ -1,10 +1,36 @@
-```
+## L0、L1、L2范数
 
-```
+L-P范数：
+$$
+L_p=\sqrt[p]{\sum_1^n{x_i^p}}\quad,x=(x_1,x_2,···,x_n)
+$$
 
-```
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-</script>
-```
+
+L0:表示度量向量中非零元素的个数。
+
+L1:表示向量x中非零元素的绝对值之和。（曼哈顿距离）
+
+L2:表示向量元素的平方和再开平方。（欧式距离）
+
+
+
+## 感知机
+
+### 1、感知机模型
+
+对n维的数据中的每一个n维向量x，n维权值向量w和偏置参数b，当w·x+b>=0，输出为1，当w·x+b<0，输出为0
+
+即
+$$
+sign(w·x+b)
+$$
+
+
+### 2、感知机策略
+
+感知机的目标：
+
+### 3、感知机算法
+
+
 
