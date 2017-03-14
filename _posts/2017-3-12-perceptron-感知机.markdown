@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      "感知机"
 subtitle:   "梯度下降、对偶形式"
@@ -5,10 +6,11 @@ date:       2017-03-12
 author:     "Mrtriste"
 header-img: "img/post-bg-js-module.jpg"
 tags:
-
     - 感知机
     - 人工智能
     - 机器学习
+---
+
 ## L0、L1、L2范数
 
 L-P范数：
