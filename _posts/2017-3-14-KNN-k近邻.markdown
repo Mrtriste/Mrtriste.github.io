@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      "KNN k近邻法"
+subtitle:   "k近邻法的构造及搜索"
+date:       2017-03-14
+author:     "Mrtriste"
+header-img: "img/post-bg-js-module.jpg"
+tags:
+    - KNN
+    - 人工智能
+    - 机器学习
+---
+
 ## k近邻
 
 给定一个训练集，对新的实例，在训练集中找到与该实例最邻近的k个实例，这k个实例属于哪个类的最多，那它就属于哪个类。
