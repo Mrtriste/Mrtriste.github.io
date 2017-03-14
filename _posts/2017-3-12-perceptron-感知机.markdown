@@ -10,14 +10,13 @@ tags:
     - 人工智能
     - 机器学习
 ---
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 ## L0、L1、L2范数
 
 L-P范数：
 $$
 L_p=\sqrt[p]{\sum_1^n{x_i^p}}\quad,x=(x_1,x_2,···,x_n)
 $$
-
 
 L0:表示度量向量中非零元素的个数。
 
