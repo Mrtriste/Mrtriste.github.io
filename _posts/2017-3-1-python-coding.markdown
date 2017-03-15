@@ -3,7 +3,7 @@ layout:     post
 title:      "Python encode & decode总结"
 subtitle:   "UTF-8 Unicode Ascii 等编码关系"
 date:       2017-03-01
-author:     "Mrtriste"
+author:     "MrTriste"
 header-img: "img/post-bg-js-module.jpg"
 tags:
     - Python
