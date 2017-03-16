@@ -3,7 +3,7 @@ layout:     post
 title:      "markdown中使用LaTex"
 subtitle:   ""
 date:       2017-03-14
-author:     "Mrtriste"
+author:     "MrTriste"
 header-img: "img/post-bg-js-module.jpg"
 tags:
     - markdown
