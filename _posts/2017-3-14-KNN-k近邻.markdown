@@ -3,7 +3,7 @@ layout:     post
 title:      "KNN k近邻法"
 subtitle:   "k近邻法的构造及搜索"
 date:       2017-03-14
-author:     "Mrtriste"
+author:     "MrTriste"
 header-img: "img/post-bg-js-module.jpg"
 tags:
     - KNN
@@ -39,8 +39,11 @@ tags:
 输出：Kd，类型为k-d tree  
 1. If Data-set为空，则返回空的k-d tree  
 2. 调用节点生成程序：  
-　　(1).确定split域：对于所有描述子数据（特征矢量），统计它们在每个维上的数据方差。假设每条数据记录为64维，可计算64个方差。挑选出最大值，对应的维就是split域的值。数据方差大表明沿该坐标轴方向上的数据分散得比较开，在这个方向上进行数据分割有较好的分辨率；  
-　　(2).确定Node-data域：数据点集Data-set按其第split域的值排序。位于正中间的那个数据点被选为Node-data。此时新的Data-set = Data-set \ Node-data（除去其中Node-data这一点）。  
+　　(1). 确定split域：对于所有描述子数据（特征矢量），统计它们在每个维上的数据方差。
+		假设每条数据记录为64维，可计算64个方差。挑选出最大值，对应的维就是split域的值。
+		数据方差大表明沿该坐标轴方向上的数据分散得比较开，在这个方向上进行数据分割有较好的分辨率；  
+　　(2).确定Node-data域：数据点集Data-set按其第split域的值排序。位于正中间的那个数据点被选为Node-data。
+		此时新的Data-set = Data-set \ Node-data（除去其中Node-data这一点）。  
 3. dataleft = {d属于Data-set && d[split] ≤ Node-data[split]}  
    Left_Range = {Range && dataleft}  
    dataright = {d属于Data-set && d[split] > Node-data[split]}  
