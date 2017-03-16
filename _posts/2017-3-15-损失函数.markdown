@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "损失函数有感"
-subtitle:   ""
+subtitle:   "误差计算 防止过拟化"
 date:       2017-03-15
 author:     "MrTriste"
 header-img: "img/post-bg-js-module.jpg"
