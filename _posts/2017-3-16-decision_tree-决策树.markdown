@@ -59,7 +59,7 @@ $$
 
 #### 信息增益
 
-已知集合D的经验熵H(D)，给定特征A下D的经验条件熵为H(D|A)，将它们作差，也就是
+已知集合D的经验熵H(D)，给定特征A下D的经验条件熵为$$H(D\mid A)$$，将它们作差，也就是
 
 $$
 g(D,A)=H(D)-H(D|A)=-\sum_{k=1}^K\frac{\mid C_k\mid}{\mid D\mid}log_2\frac{\mid C_k\mid}{\mid D\mid}-\sum_{i=1}^n\frac{\mid D_i\mid}{\mid D\mid}·(-\sum_{k=1}^K\frac{\mid D_{ik}\mid}{\mid D_{i}\mid}log_2\frac{\mid D_{ik}\mid}{\mid D_{i}\mid})
