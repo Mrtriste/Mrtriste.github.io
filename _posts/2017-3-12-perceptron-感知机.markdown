@@ -3,7 +3,7 @@ layout:     post
 title:      "感知机"
 subtitle:   "梯度下降、对偶形式"
 date:       2017-03-12
-author:     "Mrtriste"
+author:     "MrTriste"
 header-img: "img/post-bg-js-module.jpg"
 tags:
     - 感知机
