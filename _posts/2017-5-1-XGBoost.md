@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "XGBoost"
-subtitle:   "随机森林"
+subtitle:   "XGBoost"
 date:       2017-05-01
 author:     "MrTriste"
 header-img: "img/post-bg-js-module.jpg"
